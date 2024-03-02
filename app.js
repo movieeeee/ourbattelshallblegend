@@ -43,21 +43,5 @@ function getRandomColor() {
     const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
     const randomIndex = Math.floor(Math.random() * colors.length);
     return colors[randomIndex];
-}
-
-function playVideo() {
-    var video = document.getElementById('myVideo');
-    console.log(video);
-    video.play();
-}
-
-const button = document.getElementById('button');
-console.log(button);
-
-button.onclick = function() {
-    console.log('Button clicked');
-    playVideo();
-    button.remove();
-    document.getElementsByClassName("rainbow")[0].style.display = 'none';
     playBalloon = false;
 }
